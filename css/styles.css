@@ -112,15 +112,14 @@ header{
 /*	height: 500px;*/
 	display: flex;
 	box-sizing: border-box;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 	padding-top: 30px;
 }
 main{
 	width: 900px;
 	display: flex;
 	flex-direction: column;
-
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 }
 .main-caption{
 	justify-content: center;
@@ -129,6 +128,7 @@ main{
 	font-family: Proxima_Nova_Bold;
 	font-size: 24px;
 	margin-bottom: 10px;
+	color:#333333;
 }
 /*-------------------Articles--------------------*/
 article.main-article{
@@ -148,15 +148,19 @@ article.main-article{
 .article-title{
 	font-family: Proxima_Nova_Light;
 	font-size: 30px;
+	color:#333333;
 }
 .article-data{
 	font-size: 13px;
+	color: #999999;
 }
 .article-description{
 	font-size: 16px;
+	color: #999999;
 }
 .article-footer{
 	font-size: 13px;
+	color: #999999;
 }
 .yellow{
 	color: #e3b002;
@@ -177,11 +181,71 @@ article.main-article{
 	text-decoration: none;
 	color: black;
 	font-weight: 700;
+	margin-bottom: 85px;
 }
 /*-------------------Aside--------------------*/
 aside{
 	flex-grow: 1;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+/*-------------------Search bar--------------------*/
+.search-bar{
+/*	border: 1px solid black;*/
+	justify-content: center;
+	align-items:center;
+	box-sizing: border-box;
+	width:100%;
+}
+.magnifying-glass-ico{
+	position:absolute;
+	margin-top:9px;
+	margin-left:10px;
+}
+.search-field{
+	display: block;
+	font-size: 14px;
+	line-height: 25px;
+	color: #999999;
+	box-sizing: border-box;
+	width:100%;
+	padding-left: 30px;
+	border-radius: 10px;
+}
+/*-------------------Calendar--------------------*/
+.calendar-container{
+	margin-top:40px;
+	margin-bottom: 45px;
+	background-color: gray;
+	height:235px;
+	width:100%;
+	border-radius: 5px;
+}
+/*-------------------News--------------------*/
+.news-container{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+}
+.news-caption{
+	font-family: Proxima_Nova_Bold;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.news-data{
+	font-size: 12px;
+	margin-bottom: 10px;
+	color: #999999;
+}
+.news-header{
+	box-sizing: border-box;
+	width: 265px;
+	font-size: 16px;
+	margin-bottom: 20px;
+/*	border: 1px solid black;*/
 }
 /*-------------------Footer--------------------*/
 footer{
