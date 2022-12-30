@@ -217,12 +217,62 @@ aside{
 }
 /*-------------------Calendar--------------------*/
 .calendar-container{
+	display:flex;
 	margin-top:40px;
 	margin-bottom: 45px;
-	background-color: gray;
+/*	background-color: gray;*/
+	border: 1px solid #e5e5e5;
 	height:235px;
 	width:100%;
 	border-radius: 5px;
+	color:#4d4d4d;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.calendar-caption{
+	display: flex;
+	height: 40px;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 16px;
+}
+.calendar-arrow{
+	color: #a0a0a0;
+	padding: 0	20px;
+	font-size: 20px;
+}
+.calendar-month{
+	flex-grow: 1;
+	font-family: Proxima_Nova;
+	text-align: center;
+	text-transform: capitalize;
+	color: black;
+}
+.calendar-weekdays{
+	display: flex;
+	height: 27px;
+	align-items: stretch;
+	color: #aeaeae;
+}
+.calendar-weekdays-item{
+	text-align: center;
+	width: 37px;
+	background-color: #e7e7e7;
+	border: 1px solid white;
+
+}
+.calendar-days{
+	display: flex;
+	align-items: center;
+	color: #4d4d4d;
+	align-items: stretch;
+	height:35px;
+}
+.calendar-days-item{
+	text-align: center;
+	flex-grow:1;
+	border: 1px solid #e5e5e5;
 }
 /*-------------------News--------------------*/
 .news-container{
