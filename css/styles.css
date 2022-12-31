@@ -105,7 +105,10 @@ header{
 	text-decoration: none;
 	color: black;
 }
-
+.header-item>a:hover{
+	color:white;
+	text-shadow: -2px 2px black;
+}
 /*-------------------Main--------------------*/
 .main-content{
 	width: 1170px;
@@ -150,6 +153,10 @@ article.main-article{
 	font-size: 30px;
 	color:#333333;
 }
+.article-title:hover{
+	color: #f7c61d;
+	cursor: pointer;
+}
 .article-data{
 	font-size: 13px;
 	color: #999999;
@@ -183,6 +190,10 @@ article.main-article{
 	font-weight: 700;
 	margin-bottom: 85px;
 }
+.BtnMoreArticles:hover{
+	background-color: #f7c61d;
+	color: white;
+	}
 /*-------------------Aside--------------------*/
 aside{
 	flex-grow: 1;
@@ -215,35 +226,42 @@ aside{
 	padding-left: 30px;
 	border-radius: 10px;
 }
+.search-field:focus{
+	color: black;
+}
 /*-------------------Calendar--------------------*/
 .calendar-container{
 	display:flex;
-	margin-top:40px;
-	margin-bottom: 45px;
-/*	background-color: gray;*/
-	border: 1px solid #e5e5e5;
-	height:235px;
-	width:100%;
-	border-radius: 5px;
-	color:#4d4d4d;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: stretch;
+	height:235px;
+	width:100%;
+	margin-top:40px;
+	margin-bottom: 45px;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color:#4d4d4d;
 }
 .calendar-caption{
 	display: flex;
-	height: 40px;
-	align-items: center;
 	justify-content: space-between;
+	align-items: center;
+	height: 40px;
 	font-size: 16px;
+	/*border: 1px solid black;
+	box-sizing: border-box;*/
+
 }
 .calendar-arrow{
 	color: #a0a0a0;
 	padding: 0	20px;
 	font-size: 20px;
+	/*border: 1px solid black;
+	box-sizing: border-box;*/
 }
 .calendar-month{
-	flex-grow: 1;
 	font-family: Proxima_Nova;
 	text-align: center;
 	text-transform: capitalize;
@@ -252,25 +270,37 @@ aside{
 .calendar-weekdays{
 	display: flex;
 	height: 27px;
-	align-items: stretch;
 	color: #aeaeae;
+	/*border: 1px solid red;
+	box-sizing: border-box;*/
 }
 .calendar-weekdays-item{
-	text-align: center;
-	width: 37px;
+	display:flex;
+	width: 10px;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+/*	width: 37px;*/
 	background-color: #e7e7e7;
+	box-sizing: border-box;
 	border: 1px solid white;
+	border-style: none solid none solid;
 
 }
 .calendar-days{
 	display: flex;
-	align-items: center;
 	color: #4d4d4d;
-	align-items: stretch;
+	align-self: ;
 	height:35px;
+	
 }
 .calendar-days-item{
-	text-align: center;
+	display: flex;
+	width: 10px;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	line-height: 100%;
 	flex-grow:1;
 	border: 1px solid #e5e5e5;
 }
