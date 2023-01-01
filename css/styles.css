@@ -2,19 +2,19 @@
 
 @font-face {
   font-family: Proxima_Nova;
-  src: url("../fonts/Proxima Nova/ProximaNova-Reg.otf");
+  src: url("../fonts/Proxima Nova/ProximaNova-Regular.woff");
 }
 @font-face {
   font-family: Proxima_Nova_Bold;
-  src: url("../fonts/Proxima Nova/ProximaNova-Bold.otf");
+  src: url("../fonts/Proxima Nova/ProximaNova-Bold.woff");
 }
 @font-face {
   font-family: Proxima_Nova_Light;
-  src: url("../fonts/Proxima Nova/ProximaNova-Light.otf");
+  src: url("../fonts/Proxima Nova/ProximaNova-Light.woff");
 }
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Roboto/Roboto-Light.ttf");
+  src: url("../fonts/Roboto/Roboto-Light.woff");
 }
 /*-------------------CSS Reset--------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -96,13 +96,12 @@ header{
 	justify-content: space-around;
 	align-items: center;
 	box-sizing: border-box;
-	text-transform: uppercase;
-	text-decoration: none;
 }
 .header-item>a{
 	font-family: Proxima_Nova;
 	font-size: 16px;
 	text-decoration: none;
+	text-transform: uppercase;
 	color: black;
 	transition: ease-out 0.1s;
 }
