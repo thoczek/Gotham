@@ -308,7 +308,6 @@ aside{
 	box-sizing: border-box;
 	border: 1px solid white;
 	border-style: none solid none solid;
-
 }
 .calendar-days{
 	display: flex;
